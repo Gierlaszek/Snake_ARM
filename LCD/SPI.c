@@ -16,7 +16,7 @@
 #define CS 5
 #define DC 7
 #define RST 11
-#define BLUE_LED_POS 10
+
 
 
 void SPI_Init(void){
@@ -26,6 +26,7 @@ void SPI_Init(void){
 		
 		//configure output
 		//SPI0
+	
 		PORTB->PCR[SCK] |= PORT_PCR_MUX(3); 					/*SCK (PTB0) */
 		//PTB->PDDR |= (1<<SCK);
 	
@@ -45,11 +46,9 @@ void SPI_Init(void){
 		PTB->PDDR |= (1<<RST);						/*set RST pin as output*/
 		PTB->PSOR |= (1<<RST);						/*Set active 1 on pin RST*/
 		
-
-		//wlaczenie diody
-		PORTB->PCR[BLUE_LED_POS] |= PORT_PCR_MUX(1);
-		PTB->PDDR |= (1<<BLUE_LED_POS);
-
+		
+		
+		
 		//Config registers, turn on SPI0 as master
 
 		SPI0->C1 |= SPI_C1_SPE_MASK | SPI_C1_MSTR_MASK;
@@ -72,24 +71,32 @@ void SPI_Init(void){
 void SPI_write(uint8_t data){
 			
 			PTA->PCOR |= (1<<CS); //reset bit
+		
+			//CS musi byc w spi write 
+			//male opoznienie pozwala na wyrysowanie czegokolwiek
+	
 			while (!(SPI0->S & SPI_S_SPTEF_MASK));
 			SPI0->D = data;
+			delay_ms(1); //rysuje cos
+
 			PTA->PSOR |= (1<<CS);	//set bit
 }
 
-
+/*
 void lcd_cmd(uint8_t cmd){
 		//PTA->PCOR |= (1<<CS);
+	
 		PTB->PCOR |= (1<<DC);	//reset bit
+	
 		SPI_write(cmd);
+	
 		//PTA->PSOR |= (1<<CS);
 }
 
 void lcd_data(uint8_t* data, int size){
 		int i;
 		PTB->PSOR |= (1<<DC); //set bit 
-		PTB->PDOR &= ~(1<<BLUE_LED_POS); //sprawdzenie za pomoca diody 
-
+	
 		//PTA->PCOR |= (1<<CS);
 		for (i = 0; i < size; i++)
 			SPI_write(data[i]);
@@ -97,16 +104,19 @@ void lcd_data(uint8_t* data, int size){
 }
 
 void delay_ms( int n) {
-	volatile int i = 0;
-	for(i = n*3500; i != 0; i--);
+volatile int i;
+volatile int j;
+for( i = 0 ; i < n; i++)
+for(j = 0; j < 3500; j++) {}
 }
 
 void lcd_reset(){
 		PTB->PCOR |= (1<<RST); //reset bit
-		delay_ms(10000);
+
+		delay_ms(500);
 		PTB->PSOR |= (1<<RST); //set bit
 }
-
+*/
 /**
 void SPI_write_cs(uint32_t pin, spi_cs_t st){
 	

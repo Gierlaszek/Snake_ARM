@@ -393,15 +393,65 @@
               <FileType>1</FileType>
               <FilePath>.\SPI.c</FilePath>
             </File>
+            <File>
+              <FileName>bitmap.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\bitmap.c</FilePath>
+            </File>
+            <File>
+              <FileName>font.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\font.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lcd.c</FilePath>
+            </File>
+            <File>
+              <FileName>buttons.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\buttons.c</FilePath>
+            </File>
+            <File>
+              <FileName>tsi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\tsi.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>New Group</GroupName>
           <Files>
             <File>
+              <FileName>buttons.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\buttons.h</FilePath>
+            </File>
+            <File>
               <FileName>SPI.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\SPI.h</FilePath>
+            </File>
+            <File>
+              <FileName>bitmap.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\bitmap.h</FilePath>
+            </File>
+            <File>
+              <FileName>font.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\font.h</FilePath>
+            </File>
+            <File>
+              <FileName>lcd.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\lcd.h</FilePath>
+            </File>
+            <File>
+              <FileName>tsi.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\tsi.h</FilePath>
             </File>
           </Files>
         </Group>

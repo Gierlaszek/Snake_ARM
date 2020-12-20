@@ -1,6 +1,20 @@
 Dependencies for Project 'LCD', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 6140001::V6.14.1::ARMCLANG
-F (.\main.c)(0x5FD75619)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Users/aneta/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/aneta/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Driver/Include-IC:/Users/aneta/AppData/Local/Arm/Packs/Keil/Kinetis_KLxx_DFP/1.15.0/Device/Include-D__UVISION_VERSION="532" -D_RTE_ -DMKL05Z32xxx4 -D_RTE_-o ./objects/main.o -MD)
+F (.\main.c)(0x5FDBABD6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Users/aneta/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/aneta/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Driver/Include-IC:/Users/aneta/AppData/Local/Arm/Packs/Keil/Kinetis_KLxx_DFP/1.15.0/Device/Include-D__UVISION_VERSION="532" -D_RTE_ -DMKL05Z32xxx4 -D_RTE_-o ./objects/main.o -MD)
+I (lcd.h)(0x5FD9F5EB)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F5166EE)
+I (bitmap.h)(0x5FD9F07C)
+I (buttons.h)(0x5FDB98ED)
+I (C:\Users\aneta\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL05Z4.h)(0x585BD06A)
+I (C:\Users\aneta\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8F3392)
+I (C:\Users\aneta\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F3392)
+I (C:\Users\aneta\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E836932)
+I (C:\Users\aneta\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0D174C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0D1778)
+I (C:\Users\aneta\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\system_MKL05Z4.h)(0x55FBBCD8)
+I (tsi.h)(0x5FDBA502)
+F (.\SPI.c)(0x5FD9F5EB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Users/aneta/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/aneta/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Driver/Include-IC:/Users/aneta/AppData/Local/Arm/Packs/Keil/Kinetis_KLxx_DFP/1.15.0/Device/Include-D__UVISION_VERSION="532" -D_RTE_ -DMKL05Z32xxx4 -D_RTE_-o ./objects/spi.o -MD)
 I (SPI.h)(0x5FD36724)
 I (C:\Users\aneta\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL05Z4.h)(0x585BD06A)
 I (C:\Users\aneta\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8F3392)
@@ -11,7 +25,13 @@ I (C:\Users\aneta\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cms
 I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0D174C)
 I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0D1778)
 I (C:\Users\aneta\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\system_MKL05Z4.h)(0x55FBBCD8)
-F (.\SPI.c)(0x5FD7567B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Users/aneta/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/aneta/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Driver/Include-IC:/Users/aneta/AppData/Local/Arm/Packs/Keil/Kinetis_KLxx_DFP/1.15.0/Device/Include-D__UVISION_VERSION="532" -D_RTE_ -DMKL05Z32xxx4 -D_RTE_-o ./objects/spi.o -MD)
+F (.\bitmap.c)(0x5FD9F07C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Users/aneta/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/aneta/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Driver/Include-IC:/Users/aneta/AppData/Local/Arm/Packs/Keil/Kinetis_KLxx_DFP/1.15.0/Device/Include-D__UVISION_VERSION="532" -D_RTE_ -DMKL05Z32xxx4 -D_RTE_-o ./objects/bitmap.o -MD)
+I (bitmap.h)(0x5FD9F07C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F5166EE)
+F (.\font.c)(0x5FD9F07C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Users/aneta/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/aneta/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Driver/Include-IC:/Users/aneta/AppData/Local/Arm/Packs/Keil/Kinetis_KLxx_DFP/1.15.0/Device/Include-D__UVISION_VERSION="532" -D_RTE_ -DMKL05Z32xxx4 -D_RTE_-o ./objects/font.o -MD)
+I (font.h)(0x5FD9F07A)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F5166EE)
+F (.\lcd.c)(0x5FD9F5EB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Users/aneta/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/aneta/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Driver/Include-IC:/Users/aneta/AppData/Local/Arm/Packs/Keil/Kinetis_KLxx_DFP/1.15.0/Device/Include-D__UVISION_VERSION="532" -D_RTE_ -DMKL05Z32xxx4 -D_RTE_-o ./objects/lcd.o -MD)
 I (SPI.h)(0x5FD36724)
 I (C:\Users\aneta\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL05Z4.h)(0x585BD06A)
 I (C:\Users\aneta\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8F3392)
@@ -22,7 +42,38 @@ I (C:\Users\aneta\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cms
 I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0D174C)
 I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0D1778)
 I (C:\Users\aneta\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\system_MKL05Z4.h)(0x55FBBCD8)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5F5166EE)
+I (lcd.h)(0x5FD9F5EB)
+I (font.h)(0x5FD9F07A)
+F (.\buttons.c)(0x5FDB9983)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Users/aneta/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/aneta/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Driver/Include-IC:/Users/aneta/AppData/Local/Arm/Packs/Keil/Kinetis_KLxx_DFP/1.15.0/Device/Include-D__UVISION_VERSION="532" -D_RTE_ -DMKL05Z32xxx4 -D_RTE_-o ./objects/buttons.o -MD)
+I (lcd.h)(0x5FD9F5EB)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F5166EE)
+I (buttons.h)(0x5FDB98ED)
+I (C:\Users\aneta\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL05Z4.h)(0x585BD06A)
+I (C:\Users\aneta\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8F3392)
+I (C:\Users\aneta\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F3392)
+I (C:\Users\aneta\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E836932)
+I (C:\Users\aneta\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0D174C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0D1778)
+I (C:\Users\aneta\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\system_MKL05Z4.h)(0x55FBBCD8)
+F (.\tsi.c)(0x5FDBA502)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Users/aneta/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/aneta/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Driver/Include-IC:/Users/aneta/AppData/Local/Arm/Packs/Keil/Kinetis_KLxx_DFP/1.15.0/Device/Include-D__UVISION_VERSION="532" -D_RTE_ -DMKL05Z32xxx4 -D_RTE_-o ./objects/tsi.o -MD)
+I (tsi.h)(0x5FDBA502)
+I (C:\Users\aneta\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\MKL05Z4.h)(0x585BD06A)
+I (C:\Users\aneta\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm0plus.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F5166EE)
+I (C:\Users\aneta\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F3392)
+I (C:\Users\aneta\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E836932)
+I (C:\Users\aneta\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armclang.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0D174C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0D1778)
+I (C:\Users\aneta\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.15.0\Device\Include\system_MKL05Z4.h)(0x55FBBCD8)
+F (.\buttons.h)(0x5FDB98ED)()
 F (.\SPI.h)(0x5FD36724)()
+F (.\bitmap.h)(0x5FD9F07C)()
+F (.\font.h)(0x5FD9F07A)()
+F (.\lcd.h)(0x5FD9F5EB)()
+F (.\tsi.h)(0x5FDBA502)()
 F (RTE\Device\MKL05Z32xxx4\startup_MKL05Z4.s)(0x55FBBCD8)(--target=arm-arm-none-eabi -mcpu=cortex-m0plus -masm=auto -c-gdwarf-3 -Wa,armasm,--pd,"__EVAL SETA 1"-I./RTE/_Target_1-IC:/Users/aneta/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/aneta/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Driver/Include-IC:/Users/aneta/AppData/Local/Arm/Packs/Keil/Kinetis_KLxx_DFP/1.15.0/Device/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 532" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"MKL05Z32xxx4 SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_mkl05z4.o)
 F (RTE\Device\MKL05Z32xxx4\system_MKL05Z4.c)(0x55FBBCD8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Users/aneta/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/aneta/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Driver/Include-IC:/Users/aneta/AppData/Local/Arm/Packs/Keil/Kinetis_KLxx_DFP/1.15.0/Device/Include-D__UVISION_VERSION="532" -D_RTE_ -DMKL05Z32xxx4 -D_RTE_-o ./objects/system_mkl05z4.o -MD)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5F5166EE)
