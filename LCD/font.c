@@ -10,6 +10,7 @@
  
 //This table contains the hex values that represent pixels
 //for a font that is 5 pixels wide and 8 pixels high
+
 const uint8_t font_ASCII[][5] = {
   {0x00, 0x00, 0x00, 0x00, 0x00} // 20
   ,{0x00, 0x00, 0x5f, 0x00, 0x00} // 21 !
@@ -108,3 +109,4 @@ const uint8_t font_ASCII[][5] = {
   ,{0x10, 0x08, 0x08, 0x10, 0x08} // 7e ~
   ,{0x78, 0x46, 0x41, 0x46, 0x78} // 7f DEL
 };
+
