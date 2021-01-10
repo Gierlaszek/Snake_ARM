@@ -143,7 +143,7 @@ void change_electrode(void) {
  * @brief Interrupt handler for Touch Slider.
  */
 void TSI0_IRQHandler(void) {
-
+	
   end_flag = TRUE;
   TSI0->GENCS |= TSI_GENCS_EOSF_MASK; /* Clear End of Scan Flag */
   change_electrode();

@@ -2,6 +2,7 @@
 #include "string.h"
 #include "lcd.h"
 #include "font.h"
+#include "stdbool.h"
 
 #define PCD8544_FUNCTION_SET		0x20
 #define PCD8544_DISP_CONTROL		0x08
@@ -12,7 +13,7 @@
 #define PCD8544_H_BIAS				0x10
 #define PCD8544_H_VOP				0x80
  
-#define LCD_BUFFER_SIZE			(84 * 48 / 8)
+#define LCD_BUFFER_SIZE			(LCD_HEIGHT * LCD_WIDTH / 8)
 
 uint8_t lcd_buffer[LCD_BUFFER_SIZE];
 
@@ -30,10 +31,10 @@ void lcd_setup(){
 		lcd_reset();
 	
 		lcd_cmd(0x21);
-		lcd_cmd(0xb0); //0x13 - kontrast 
+		lcd_cmd(0x13); //0x13 - kontrast 
 		lcd_cmd(0x04);
 		lcd_cmd(0x14);
-		lcd_cmd(0x80 | 0xb1); //Ustawienie kontrastu // b6
+		lcd_cmd(0x80 | 0xb1); 
 		lcd_cmd(0x20); //
 		lcd_cmd(0x0c);
 		
@@ -65,6 +66,34 @@ void lcd_draw_text(int row, int col, const char* text)
 			*pbuf++ = *font++;
 		}
 		*pbuf++ = 0;
+	}
+}
+
+void lcd_draw_pixel(int x, int y){
+	lcd_buffer[ x + (y >> 3) * LCD_WIDTH] |= 1 << (y & 7);
+}
+
+
+void lcd_del_pixel(int x, int y){
+	lcd_buffer[ x + (y >> 3) * LCD_WIDTH] &=~ 1 << (y & 7);
+}
+
+
+// draw line in direction x or y
+void lcd_draw_line_x_or_y(int x1, int y1, int x2, int y2, char dir){
+	int dx = x2 - x1;
+	int dy = y2 - y1;
+	if(dir == 'x'){
+		for(int i = 0; i < dx; i++)
+		{
+			lcd_draw_pixel(x1+i, y1);
+		}
+	}
+	else if(dir == 'y'){
+		for(int i = 0; i < dy; i++)
+		{
+			lcd_draw_pixel(x1, y1+i);
+		}
 	}
 }
 
