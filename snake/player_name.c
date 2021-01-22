@@ -34,9 +34,9 @@ void set_result_ok(uint8_t r)
 void ADC0_IRQHandler()
 {	
 	temp = ADC0->R[0];										// Odczyt danej i skasowanie flagi COCO
-	if(!result_ok)													// Sprawdz, czy wynik skonsumowany przez petle glówna
+	if(!result_ok)													// Sprawdz, czy wynik skonsumowany przez petle glÃ³wna
 	{
-		result_ADC = temp;												// Wyslij nowa dana do petli glównej
+		result_ADC = temp;												// Wyslij nowa dana do petli glÃ³wnej
 		result_ok=1;
 	}
 	
