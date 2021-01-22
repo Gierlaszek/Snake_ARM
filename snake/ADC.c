@@ -1,42 +1,6 @@
 #include "ADC.h"
 #include "buttons.h"
 
-/*
-uint8_t result_ok = 0;
-uint16_t temp;
-float	result_ADC;
-
-void ADC0_IRQHandler()
-{	
-	temp = ADC0->R[0];										// Odczyt danej i skasowanie flagi COCO
-	if(!result_ok)													// Sprawdz, czy wynik skonsumowany przez petle glówna
-	{
-		result_ADC = temp;												// Wyslij nowa dana do petli glównej
-		result_ok=1;
-	}
-	
-	//ADC0->SC1[0] |= ADC_SC1_ADCH(4);	
-	NVIC_EnableIRQ(ADC0_IRQn);
-}
-*/
-
-/*
-float get_resultADC()
-{
-	return result_ADC;
-}
-
-uint8_t get_result_ok()
-{
-	return result_ok;
-}
-
-void set_result_ok(uint8_t r)
-{
-	result_ok = r;
-}
-*/
-
 uint8_t ADC_Init(void)
 {
 	uint16_t kalib_temp;

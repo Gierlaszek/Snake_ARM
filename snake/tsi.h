@@ -8,6 +8,7 @@
  * @date Oct 2019
  * @brief File containing enums, structures and declarations.
  * @ver 0.1
+ * BORROWED FILE TO HANDLE THE SNAKE
  */
 
 #ifndef TSI_H

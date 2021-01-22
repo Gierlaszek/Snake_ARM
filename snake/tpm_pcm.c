@@ -8,6 +8,7 @@
  * @date Nov 2020
  * @brief File containing definitions for TPM.
  * @ver 0.1
+ * BORROWED FILE TO HANDLE THE SNAKE
  */
 
 #include "MKL05Z4.h"

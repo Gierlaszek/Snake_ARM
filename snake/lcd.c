@@ -1,3 +1,11 @@
+/*******************************************************************
+* 	@file LCD.c 
+*		@author Kamil Gierlach, Karol Piech
+*		@date 15.12.2020
+*   @ver 1.2
+* 	@brief File containing LCD support
+**********************************************************************/
+
 #include "SPI.h"
 #include "string.h"
 #include "lcd.h"
@@ -47,15 +55,18 @@ void lcd_reset(){
 		PTB->PSOR |= (1<<RST); //set bit
 }
 
+//drawing picture
 void lcd_draw_bitmap(const uint8_t* data){
 		memcpy(lcd_buffer, data, LCD_BUFFER_SIZE);
 }
 
+//clear lcd buffer
 void lcd_clear(){
 		memset(lcd_buffer, 0, LCD_BUFFER_SIZE);	
 }
 
 
+//draw text on LCD 
 void lcd_draw_text(int row, int col, const char* text)
 {
 	int i;
@@ -70,11 +81,12 @@ void lcd_draw_text(int row, int col, const char* text)
 	}
 }
 
+//draw single pixel
 void lcd_draw_pixel(int x, int y){
 	lcd_buffer[ x + (y >> 3) * LCD_WIDTH] |= 1 << (y & 7);
 }
 
-
+//delete single pixel
 void lcd_del_pixel(int x, int y){
 	lcd_buffer[ x + (y >> 3) * LCD_WIDTH] &=~ 1 << (y & 7);
 }
@@ -98,12 +110,14 @@ void lcd_draw_line_x_or_y(int x1, int y1, int x2, int y2, char dir){
 	}
 }
 
+//SEND TO LCD COMMAND
 void lcd_cmd(uint8_t cmd)
 {
 		PTB->PCOR |= (1<<DC);	//reset bit
 		SPI_write(cmd);
 }
 
+//SEND TO LCD BUFFER
 void lcd_copy(void)
 {
 		int i;
