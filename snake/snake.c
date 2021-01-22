@@ -54,7 +54,7 @@ char out_name[];
 
 /*random*/
 float ADC;
-float correct_ADC = ((float)(((float)2.91) / 4095) );	 // Wspólczynnik korekcji wyniku, w stosunku do napiecia referencyjnego przetwornika
+float correct_ADC = ((float)(((float)2.91) / 4095) );	 // WspÃ³lczynnik korekcji wyniku, w stosunku do napiecia referencyjnego przetwornika
 
 
 void snake_intro()
